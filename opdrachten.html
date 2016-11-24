@@ -21,6 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
+	<!-- jQuery; used for toggle -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -85,21 +88,33 @@
                 <div class="col-lg-12 text-center">
 	
 <font id="tekst"  size="7" face="leewadee">De opdracht datacommunicatie blok1</font>
-           
-<style type="text/css">
-.show{display:block;}
-.hide{display:none;}
-</style>
-<script type="text/javascript">
-function showImg()
-{
-var obj=document.getElementById('Picture1');
-obj.className = 'show';
-}
+     
+
+<script>
+$(function() {
+    $( "#button" ).click(
+	function() {
+        $( "#item" ).toggle();
+    }
+	);
+});
 </script>
 
-<img id="Picture1" src="opdrachten/blok1/datacom.jpg" class="hide">
-<input type="button" onclick = "showImg()" value= "Opdracht Leerdoelen voor het vak Datacommunicatie">
+<table id="tables" style="width:100%">
+  <tr>
+    <td>Name:</td>
+    <td style="text-align:center;"><input id="button" class="buttonimg" type="button" value= "Opdracht Leerdoelen voor het vak Datacommunicatie"><br><img id="item" src="opdrachten/blok1/datacom.jpg" style="display:none;"></td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+
 
 
 

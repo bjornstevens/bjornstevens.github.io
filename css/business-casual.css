@@ -92,7 +92,25 @@ hr {
 	margin: 0 auto;
 	width: 700px;
 }
-
+.buttonimg {
+	width: 380px;
+	height: 25px;
+	color: #00E5BC;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	background-color: blue;
+	border-color: #5D00E5
+	
+	
+}
+#tables {
+	border: 2px solid black;
+    border-collapse: collapse;
+	
+	
+	
+}
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;
